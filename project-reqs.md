@@ -1,8 +1,7 @@
 # Ember.js Project
 
-We've put your soft skills to the test, now we want to see some dope code! For this part of the interview, we would like you to create a small Ember.js app that requests and shows data from the JSONPlaceholder API (Docs can be found here). We suggest using the addon ember-ajax to talk to this API.
+We've put your soft skills to the test, now we want to see some dope code! For this part of the interview, we would like you to create a small Ember.js app that requests and shows data from the JSONPlaceholder API. We suggest using the addon ember-ajax to talk to this API.
 
-If any special requirements have been conveyed to you from your interview team, they supersede the following.
 ## Requirements
 
   * Display a paginated list of post titles. The data should be retrieved from the JSONPlaceholder API, and there should be pagination controls to retrieve additional pages of data.
@@ -16,5 +15,3 @@ If any special requirements have been conveyed to you from your interview team, 
 
   * Use ember-cli-sass instead of vanilla CSS to style your app.
   * Use ember-test-selectors to isolate how you select elements in tests from your styling code and ember-cli-mirage to isolate your tests from talking to a real API on the internet.
-
-If you have any questions about the requirements, please feel free to reach out to your interview team.
