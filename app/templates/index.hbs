@@ -1,0 +1,6 @@
+<h2>Boo ya!</h2>
+{{outlet}}
+{{#each posts as |post|}}
+  <h3 class="post-title">{{post.title}}</h3>
+  <ModalInfo @post={{post}}/>
+{{/each}}
