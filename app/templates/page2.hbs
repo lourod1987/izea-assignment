@@ -1,0 +1,12 @@
+<main class="main-content">
+  <h2 class="subheading">Posts</h2>
+  {{#each posts as |post|}}
+    <TitleButton @post={{post}} />
+  {{/each}}
+  <p>First</p>
+  {{#link-to "index"}}Prev{{/link-to}}
+   <p>Page 2 of 5</p>
+  {{#link-to "page3"}}Next{{/link-to}}
+  {{#link-to "page5"}}Last{{/link-to}}
+</main>
+{{outlet}}
