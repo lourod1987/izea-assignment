@@ -6,5 +6,5 @@ export default DS.RESTSerializer.extend({
       posts: payload
     };
     return this._super(store, primaryModelClass, payload, id, requestType);
-  }
+  },
 });
