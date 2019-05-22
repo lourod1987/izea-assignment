@@ -1,0 +1,29 @@
+@import "globals";
+
+.button-container {
+  display: grid;
+  justify-content: center;
+  margin: 0 50px 40px 50px;
+}
+
+.title-button {
+  cursor: pointer;
+  padding: 1.2rem;
+  border-radius: 15px;
+  color: $secondary-clr;
+  background: $bg-clr;
+  border: solid 3px $accent-clr;
+  box-shadow: 3px 3px 4px rgb(114, 114, 114);
+}
+
+.post-title {
+  font-family: $titles-font;
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+
+.title-button:hover {
+  background: $secondary-clr;
+  color: $bg-clr;
+  border: inset;
+}

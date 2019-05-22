@@ -1,0 +1,21 @@
+@import "globals";
+
+.modal-info {
+  font-family: $text-font;
+  font-size: 1.3rem;
+  color: $primary-clr;
+  padding: 1.5rem;
+  border: ridge 5px $accent-clr;
+  margin: 15px auto 0 auto;
+}
+
+.post-body {
+  display: block;
+}
+
+.modal-info ul {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+  line-height: 1.8rem;
+}

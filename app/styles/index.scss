@@ -1,0 +1,15 @@
+@import "globals";
+
+.main-content {
+  background-color: $bg-clr;
+  min-height: 70vh;
+}
+
+.subheading {
+  font-family: $titles-font;
+  font-size: 1.6rem;
+  color: $primary-clr;
+  border-bottom: dashed 2px $primary-clr;
+  width: 215px;
+  margin: 40px auto 40px 100px;
+}
