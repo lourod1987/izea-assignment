@@ -10,6 +10,10 @@ Router.map(function() {
   this.route('page-not-found', {
     path: '/*wildcard'
   });
+  this.route('page2');
+  this.route('page3');
+  this.route('page4');
+  this.route('page5');
 });
 
 export default Router;
