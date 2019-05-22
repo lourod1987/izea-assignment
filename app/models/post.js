@@ -5,5 +5,5 @@ export default Model.extend({
   title: attr('string'),
   body: attr('string'),
 
-  userId: belongsTo('user')
+  userId: belongsTo('user'),
 });

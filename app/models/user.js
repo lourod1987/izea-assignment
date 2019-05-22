@@ -8,5 +8,5 @@ export default Model.extend({
   phone: attr('string'),
   website: attr('string'),
 
-  post: hasMany('post')
+  post: hasMany('post'),
 });
