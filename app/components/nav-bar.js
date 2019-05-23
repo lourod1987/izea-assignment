@@ -1,3 +1,4 @@
+/* eslint-disable ember/no-function-prototype-extensions */
 import Component from '@ember/component';
 import { inject } from '@ember/service';
 import { computed } from '@ember/object';
