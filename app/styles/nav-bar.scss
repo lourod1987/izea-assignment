@@ -1,0 +1,33 @@
+@import "globals";
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.nav-button {
+  cursor: pointer;
+  font-family: $site-name-font;
+  font-size: 1.2rem;
+  color: $secondary-clr;
+  background: $bg-clr;
+  border: 0;
+  margin: 0 -3px;
+  padding: 0.5rem;
+}
+.nav-button:disabled {
+  color: rgb(204, 204, 204);
+  text-decoration: line-through;
+}
+.nav-button:hover {
+  color: $primary-clr;
+  font-weight: bolder;
+}
+
+.nav-guide {
+  font-family: $site-name-font;
+  font-size: 1.5rem;
+  color: $accent-clr;
+  margin: 4px 10px 0 10px;
+}
