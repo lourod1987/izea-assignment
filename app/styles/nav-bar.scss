@@ -3,6 +3,7 @@
 .nav-bar {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 40px 0;
 }
 
@@ -12,22 +13,33 @@
   font-size: 1.2rem;
   color: $secondary-clr;
   background: $bg-clr;
-  border: 0;
+  border-top: solid 2px $secondary-clr;
+  border-bottom: solid 2px $secondary-clr;
+  border-left: 0;
+  border-right: 0;
   margin: 0 -3px;
   padding: 0.5rem;
 }
-.nav-button:disabled {
-  color: rgb(204, 204, 204);
-  text-decoration: line-through;
-}
+
 .nav-button:hover {
   color: $primary-clr;
   font-weight: bolder;
 }
 
+.nav-button:disabled {
+  color: rgb(204, 204, 204);
+  text-decoration: line-through;
+}
+
+.nav-button:disabled:hover {
+  cursor: default;
+  color: rgb(204, 204, 204);
+  font-weight: 300;
+}
+
 .nav-guide {
   font-family: $site-name-font;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: $accent-clr;
-  margin: 4px 10px 0 10px;
+  margin: 0 10px;
 }
