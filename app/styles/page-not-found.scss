@@ -1,0 +1,34 @@
+@import "globals";
+
+.lost-main {
+  display: grid;
+  grid: auto-flow / repeat(1, 1fr);
+  margin: 100px 0;
+  justify-items: center;
+}
+
+.lost-text {
+  font-family: $titles-font;
+  font-size: 2.5rem;
+  color: $accent-clr;
+  text-align: center;
+}
+
+.lost-btn {
+  cursor: pointer;
+  margin: 40px 0;
+  padding: 0.5rem;
+  font-family: $site-name-font;
+  font-size: 1.8rem;
+  color: $secondary-clr;
+  background: $bg-clr;
+  border-top: solid 2px $secondary-clr;
+  border-bottom: solid 2px $secondary-clr;
+  border-left: 0;
+  border-right: 0;
+}
+
+.lost-btn:hover {
+  color: $primary-clr;
+  font-weight: bolder;
+}
