@@ -9,18 +9,26 @@ module('Integration | Component | nav-bar', function(hooks) {
   test('it renders', async function(assert) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
+    let text = `« First
+    ˂ Prev
+  Page 1 of 5
+      
+        Next ˃
+      
+      
+        Last »`;
 
     await render(hbs`<NavBar />`);
 
-    assert.equal(this.element.textContent.trim(), '');
+    assert.equal(this.element.textContent.trim(), text);
 
     // Template block usage:
-    await render(hbs`
-      <NavBar>
-        template block text
-      </NavBar>
-    `);
+    // await render(hbs`
+    //   <NavBar>
+    //     template block text
+    //   </NavBar>
+    // `);
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    // assert.equal(this.element.textContent.trim(), 'template block text');
   });
 });

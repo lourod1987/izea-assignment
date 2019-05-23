@@ -12,15 +12,18 @@ module('Integration | Component | header-navbar', function(hooks) {
 
     await render(hbs`<HeaderNavbar />`);
 
-    assert.equal(this.element.textContent.trim(), '');
+    assert.equal(this.element.textContent.trim(), 'Post It');
 
     // Template block usage:
-    await render(hbs`
-      <HeaderNavbar>
-        template block text
-      </HeaderNavbar>
-    `);
+    // await render(hbs`
+    //   <HeaderNavbar>
+    //     template block text
+    //   </HeaderNavbar>
+    // `);
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    // assert.equal(this.element.textContent.trim(), `Post It
+    
+    
+    // template block text`);
   });
 });

@@ -9,18 +9,22 @@ module('Integration | Component | modal-info', function(hooks) {
   test('it renders', async function(assert) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
-
+    let text = `Name: 
+    Username: 
+    Phone: 
+    Email: 
+    Website:`;
     await render(hbs`<ModalInfo />`);
 
-    assert.equal(this.element.textContent.trim(), '');
+    assert.equal(this.element.textContent.trim(), text);
 
     // Template block usage:
-    await render(hbs`
-      <ModalInfo>
-        template block text
-      </ModalInfo>
-    `);
+    // await render(hbs`
+    //   <ModalInfo>
+    //     template block text
+    //   </ModalInfo>
+    // `);
 
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    // assert.equal(this.element.textContent.trim(), 'template block text');
   });
 });
