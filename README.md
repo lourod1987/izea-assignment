@@ -1,7 +1,7 @@
 # izea-assignment
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a0a4b40d-f3fb-47ab-9007-e12d55e23d5e/deploy-status)](https://app.netlify.com/sites/paginated-posts/deploys)
 
-This web app retrieves and displays a list of paginated post titles from [JSON Placeholder API](https://jsonplaceholder.typicode.com/). 
+This ember app retrieves and displays a list of paginated post titles from [JSON Placeholder API](https://jsonplaceholder.typicode.com/). 
 
 This ember app uses [ember-cli-sass](https://github.com/aexmachina/ember-cli-sass) to create its styling modules and rules.
 
