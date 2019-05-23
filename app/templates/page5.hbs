@@ -1,12 +1,4 @@
-<main class="main-content">
-  <h2 class="subheading">Posts</h2>
-  {{#each posts as |post|}}
-    <TitleButton @post={{post}} />
-  {{/each}}
-  {{#link-to "index"}}First{{/link-to}}
-  {{#link-to "page4"}}Prev{{/link-to}}
-  <p>Page 5 of 5</p>
-  <p>Next</p>
-  <p>Last</p>
-</main>
+<NavBar />
+<MainContent @posts={{posts}}/>
+<NavBar />
 {{outlet}}
