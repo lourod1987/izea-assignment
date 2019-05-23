@@ -3,12 +3,12 @@
 
 This ember app retrieves and displays a list of paginated post titles from [JSON Placeholder API](https://jsonplaceholder.typicode.com/). 
 
-This ember app uses [ember-cli-sass](https://github.com/aexmachina/ember-cli-sass) to create its styling modules and rules.
-
-All acceptance tests to prove functionality were written with ember standard test library QUnit.
-
 Pagination controls are located at both the top of the page and the bottom of the page. 
 Each post title can be clicked to display additional information from the post and user who created the post.
+
+This ember app uses [ember-cli-sass](https://github.com/aexmachina/ember-cli-sass) to create its styling modules and rules.
+All acceptance tests to prove functionality were written with ember standard test library QUnit.
+
 
 Live link for this web app is located at [Post It](https://paginated-posts.netlify.com/)
 
