@@ -1,7 +1,16 @@
 # izea-assignment
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a0a4b40d-f3fb-47ab-9007-e12d55e23d5e/deploy-status)](https://app.netlify.com/sites/paginated-posts/deploys)
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This web app retrieves and displays a list of paginated post titles from [JSON Placeholder API](https://jsonplaceholder.typicode.com/). 
+
+This ember app uses [ember-cli-sass](https://github.com/aexmachina/ember-cli-sass) to create its styling modules and rules.
+
+All acceptance tests to prove functionality were written with ember standard test library QUnit.
+
+Pagination controls are located at both the top of the page and the bottom of the page. 
+Each post title can be clicked to display additional information from the post and user who created the post.
+
+Live link for this web app is located at [Post It](https://paginated-posts.netlify.com/)
 
 ## Prerequisites
 
