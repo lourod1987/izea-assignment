@@ -1,0 +1,7 @@
+<main class="main-content">
+  <h2 class="subheading">Posts</h2>
+  {{#each posts as |post|}}
+    <TitleButton @post={{post}} />
+  {{/each}}
+</main>
+{{yield}}
