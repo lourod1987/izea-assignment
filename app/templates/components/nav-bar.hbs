@@ -1,34 +1,34 @@
 <nav class="nav-bar">
   {{#if isFirstPage}}
     {{#link-to first}}
-      <button {{action "onPageChange"}} class="nav-button">
+      <button {{action "onPageChange"}} class="nav-button" id="first">
         &#xab; First
       </button>
     {{/link-to}}
     {{#link-to prev}}
-      <button {{action "onPageChange"}} class="nav-button">
+      <button {{action "onPageChange"}} class="nav-button" id="prev">
         &#x2c2; Prev
       </button>
     {{/link-to}}
   {{else}}
-    <button disabled="disabled" class="nav-button">&#xab; First</button>
-    <button disabled="disabled" class="nav-button">&#x2c2; Prev</button>
+    <button disabled="disabled" class="nav-button" id="disabled-first">&#xab; First</button>
+    <button disabled="disabled" class="nav-button" id="disabled-prev">&#x2c2; Prev</button>
   {{/if}}
   <p class="nav-guide">Page {{pageNumber}} of 5</p>
   {{#if isLastPage}}
     {{#link-to next}}
-      <button {{action "onPageChange"}} class="nav-button">
+      <button {{action "onPageChange"}} class="nav-button" id="next">
         Next &#x2c3;
       </button>
     {{/link-to}}
     {{#link-to "page5"}}
-      <button {{action "onPageChange"}} class="nav-button">
+      <button {{action "onPageChange"}} class="nav-button" id="last">
         Last &#xbb;
       </button>
     {{/link-to}}
   {{else}}
-    <button disabled="disabled" class="nav-button">Next &#x2c3;</button>
-    <button disabled="disabled" class="nav-button">Last &#xbb;</button>
+    <button disabled="disabled" class="nav-button" id="disabled-next">Next &#x2c3;</button>
+    <button disabled="disabled" class="nav-button" id="disabled-last">Last &#xbb;</button>
   {{/if}}
 </nav>
 {{yield}}
