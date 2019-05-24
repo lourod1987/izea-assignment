@@ -1,4 +1,3 @@
-/* eslint-disable ember/no-function-prototype-extensions */
 import Component from '@ember/component';
 import { inject } from '@ember/service';
 import { computed } from '@ember/object';
@@ -13,17 +12,12 @@ export default Component.extend({
   prev: 'index',
   next: 'page2',
   last: 'page5',
+  isFirstPage: false,
+  isLastPage: false,
   routing: inject('-routing'),
   currentPage: computed('routing.currentRouteName', function() {
     return this.get('routing.currentRouteName');
   }),
-
-  isFirstPage: function() {
-    return this.get('pageNumber') !== '1';
-  }.property('pageNumber'),
-  isLastPage: function() {
-    return this.get('pageNumber') !== '5';
-  }.property('pageNumber'),
 
   updateValues: function () {
     let page = this.currentPage;
@@ -33,6 +27,7 @@ export default Component.extend({
         this.set('first', null);
         this.set('prev', null);
         this.set('next', 'page2');
+        this.set('isFirstPage', true);
         break;
       case "page2":
           this.set('pageNumber', '2');
@@ -54,6 +49,7 @@ export default Component.extend({
           this.set('prev', 'page4');
           this.set('next', null);
           this.set('last', null);
+          this.set('isLastPage', true);
         break;
     }
   },
@@ -63,3 +59,4 @@ export default Component.extend({
     },
   },
 })
+
