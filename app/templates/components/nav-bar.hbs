@@ -4,12 +4,12 @@
     <button disabled="disabled" class="nav-button" id="disabled-prev">&#x2c2; Prev</button>
   {{else}}
     {{#link-to first}}
-      <button {{action "onPageChange"}} class="nav-button" id="first">
+      <button class="nav-button" id="first">
         &#xab; First
       </button>
     {{/link-to}}
     {{#link-to prev}}
-      <button {{action "onPageChange"}} class="nav-button" id="prev">
+      <button class="nav-button" id="prev">
         &#x2c2; Prev
       </button>
     {{/link-to}}
@@ -20,12 +20,12 @@
     <button disabled="disabled" class="nav-button" id="disabled-last">Last &#xbb;</button>
   {{else}}
     {{#link-to next}}
-      <button {{action "onPageChange"}} class="nav-button" id="next">
+      <button class="nav-button" id="next">
         Next &#x2c3;
       </button>
     {{/link-to}}
     {{#link-to last}}
-      <button {{action "onPageChange"}} class="nav-button" id="last">
+      <button class="nav-button" id="last">
         Last &#xbb;
       </button>
     {{/link-to}}

@@ -53,10 +53,5 @@ export default Component.extend({
         break;
     }
   },
-  actions: {
-    onPageChange() {
-      this.updateValues();
-    },
-  },
 })
 
