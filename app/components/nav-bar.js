@@ -25,8 +25,6 @@ export default Component.extend({
     switch(page) {
       case "index":
         this.set('pageNumber', '1');
-        this.set('first', null);
-        this.set('prev', null);
         this.set('next', 'page2');
         this.set('isFirstPage', true);
         break;
@@ -48,8 +46,6 @@ export default Component.extend({
       case "page5":
           this.set('pageNumber', '5');
           this.set('prev', 'page4');
-          this.set('next', null);
-          this.set('last', null);
           this.set('isLastPage', true);
         break;
     }
