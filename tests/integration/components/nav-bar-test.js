@@ -10,7 +10,10 @@ module('Integration | Component | nav-bar', function(hooks) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
     let text = `« First
-    ˂ Prev
+      
+      
+        ˂ Prev
+      
   Page 1 of 5
       
         Next ˃
