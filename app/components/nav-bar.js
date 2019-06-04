@@ -2,6 +2,7 @@ import Component from '@ember/component';
 import { inject } from '@ember/service';
 import { computed } from '@ember/object';
 
+// on page load check current route name and based on that value change the values of each property below
 export default Component.extend({
   init: function() {
     this._super();

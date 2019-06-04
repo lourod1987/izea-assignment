@@ -6,6 +6,7 @@ module('Acceptance | lost page', function(hooks) {
   setupApplicationTest(hooks);
 
   test('any page visited not in router should lead to page-not-found. Button on page-not-found should lead back to main page', async function(assert) {
+    // test that any page visited that is not in router leads to page-not-found route
     await visit('/');
     assert.equal(currentURL(), '/');
     await visit('/test');

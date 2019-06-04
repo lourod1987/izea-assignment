@@ -14,16 +14,6 @@ module('Integration | Component | header-navbar', function(hooks) {
 
     assert.equal(this.element.textContent.trim(), 'Post It');
 
-    // Template block usage:
-    // await render(hbs`
-    //   <HeaderNavbar>
-    //     template block text
-    //   </HeaderNavbar>
-    // `);
-
-    // assert.equal(this.element.textContent.trim(), `Post It
-    
-    
-    // template block text`);
+    // Template block never used so test was removed
   });
 });

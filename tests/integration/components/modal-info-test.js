@@ -18,13 +18,6 @@ module('Integration | Component | modal-info', function(hooks) {
 
     assert.equal(this.element.textContent.trim(), text);
 
-    // Template block usage:
-    // await render(hbs`
-    //   <ModalInfo>
-    //     template block text
-    //   </ModalInfo>
-    // `);
-
-    // assert.equal(this.element.textContent.trim(), 'template block text');
+    // Template block never used so test was removed
   });
 });

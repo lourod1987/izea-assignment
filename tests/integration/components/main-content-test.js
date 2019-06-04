@@ -14,13 +14,6 @@ module('Integration | Component | main-content', function(hooks) {
 
     assert.equal(this.element.textContent.trim(), 'Posts');
 
-    // Template block usage:
-    // await render(hbs`
-    //   <MainContent>
-    //     template block text
-    //   </MainContent>
-    // `);
-
-    // assert.equal(this.element.textContent.trim(), 'template block text');
+    // Template block never used so test was removed
   });
 });

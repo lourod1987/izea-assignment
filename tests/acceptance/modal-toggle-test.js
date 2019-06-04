@@ -6,7 +6,7 @@ module('Acceptance | modal toggle', function(hooks) {
   setupApplicationTest(hooks);
 
   test('should toggle open modal and still be on same page', async function(assert) {
-    
+    // test modal being toggled on click and verify contents
     await visit('/');
     await click('button.title-button');
     assert.ok(document.querySelector('p.post-body'));

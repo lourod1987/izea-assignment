@@ -22,13 +22,6 @@ module('Integration | Component | nav-bar', function(hooks) {
 
     assert.equal(this.element.textContent.trim(), text);
 
-    // Template block usage:
-    // await render(hbs`
-    //   <NavBar>
-    //     template block text
-    //   </NavBar>
-    // `);
-
-    // assert.equal(this.element.textContent.trim(), 'template block text');
+    // Template block never used so test was removed
   });
 });

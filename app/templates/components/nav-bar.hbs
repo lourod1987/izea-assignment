@@ -1,3 +1,4 @@
+{{!-- if isFirstPage is true render disabled buttons  --}}
 <nav class="nav-bar">
   {{#if isFirstPage}}
     <button disabled="disabled" class="nav-button" id="disabled-first">&#xab; First</button>
@@ -15,6 +16,7 @@
     {{/link-to}}
   {{/if}}
   <p class="nav-guide">Page {{pageNumber}} of 5</p>
+  {{!-- if isLastPage is true render disabled buttons  --}}
   {{#if isLastPage}}
     <button disabled="disabled" class="nav-button" id="disabled-next">Next &#x2c3;</button>
     <button disabled="disabled" class="nav-button" id="disabled-last">Last &#xbb;</button>
